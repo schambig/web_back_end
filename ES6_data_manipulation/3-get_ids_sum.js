@@ -1,0 +1,5 @@
+export default function getStudentIdsSum(students) {
+  // Use the reduce() method to iterate over each student in the students array
+  // Accumulate the sum of student IDs starting from an initial value of 0
+  return students.reduce((acumulator, student) => acumulator + student.id, 0);
+}
