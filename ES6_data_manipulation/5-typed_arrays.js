@@ -15,3 +15,21 @@ export default function createInt8TypedArray(length, position, value) {
   // Returning the created DataView
   return data;
 }
+
+/* const createInt8TypedArray = (length, position, value) => {
+  const buffer = new ArrayBuffer(length);
+  const data = new DataView(buffer);
+  // Checking if the specified position is greater than the length of the buffer minus 1
+  // Since array indexes start from 0, the last index is length - 1
+  if (position > length - 1) {
+    // If the position is greater than the last index
+    throw new Error('Position outside range');
+  }
+  // Setting the value at the specified position in the DataView
+  // Unlike setUint8(), setInt8() sets a signed 8-bit integer,
+  // allowing a wider range of values including negatives
+  data.setInt8(position, value);
+  return data;
+};
+
+export default createInt8TypedArray; */
