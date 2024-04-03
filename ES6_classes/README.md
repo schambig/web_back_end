@@ -1,1 +1,1 @@
-Working with classes, metaprogramming and symbols
+Working with classes, methods, metaprogramming and symbols
